@@ -1,0 +1,22 @@
+member
+	- src
+		com.ktds.member.controller
+			MemberController.java (url : /user)
+			
+		com.ktds.member.model
+			MemberDto.java
+			MemberDetailDto.java
+			ZipCodeDto.java
+			
+		com.ktds.member.model.service
+			MemberService.java (I)
+			MemberServiceImpl.java
+		
+		com.ktds.member.model.dao
+			MemberDao.java (I)
+			MemberDaoImpl.java		
+		
+		com.ktds.util
+	
+	- webContent
+		user : html, jsp

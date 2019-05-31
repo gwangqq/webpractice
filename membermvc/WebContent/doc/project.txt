@@ -1,0 +1,94 @@
+membermvc
+	src
+		- com.kitri.admin.controller
+			AdminController.java (Servlet : /admin)
+			
+			
+		- com.kitri.admin.model
+		
+		- com.kitri.admin.model.dao
+			AdminDao.java (I)
+			AdminDaoImpl.java
+			
+		- com.kitri.admin.model.service
+			AdminService.java (I)
+			AdminServiceImpl.java
+			
+		- com.kitri.member.controller
+			MemberController.java (Servlet : /user)
+		
+		- com.kitri.member.model
+			MemberDto.java
+			MemberDetailDto.java
+			ZipcodeDto.java
+			
+		- com.kitri.member.model.dao
+			MemberDao.java (I)
+			MemberDaoImpl.java
+
+		- com.kitri.member.model.service
+			MemberService.java (I)
+			MemberServiceImpl.java
+
+		- com.kitri.util
+			DBConnection.java
+			DBClose.java
+			Encoder.java
+			
+			
+			
+------------------------------------		
+	webContent
+		-js  : member.js
+		-css : *.css
+		-img : *.jpg, png, gif
+		-admin
+			memberlist.jsp
+		-user
+			- member
+				-member.jsp
+				 registerok.jsp
+				 registerfail.jsp
+				 idcheck.jsp
+				 zipsearch.jsp
+				 membermodify.jsp
+				 
+			- login
+				-login
+				 login.jsp
+				 loginok.jsp
+				 loginfail.jsp
+		
+		index.jsp
+		
+*HttpSession & Cookie
+공통점 : 뭔가를 저장할 수 있는 저장공간
+
+Cookie		: client	txt >> String (문자열)
+				-id 저장
+				-오늘은 그만 볼래요 페이지
+				-쇼핑몰 오늘 본 상품 
+
+HttpSession : server memory >> Object (객체)를 저장 
+
+
+------------------------------------------------------
+
+오늘본 상품 - 쿠키
+
+쿠키와 세션은 사이트 정책에 따라 상이하게 적용된다 -------------------------------
+찜목록(위시리스트) : 운동화
+
+장바구니 : 운동화-사이즈, 색상 등등 
+
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
